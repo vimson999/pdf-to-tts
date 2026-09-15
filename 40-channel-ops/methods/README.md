@@ -21,6 +21,7 @@
 ## 当前模块
 
 - `10-reference-channel-research.md`：参考频道历史样本与已提炼规律
+- `15-reference-script-structure.md`：参考频道完整脚本的结构研究，重点研究“如何把研报讲细但不枯燥”
 - `20-topic-selection.md`：选题基本单位、候选命题和筛选原则
 - `30-topic-scoring-model.md`：候选命题评分模型
 - `40-report-format-strategy.md`：单篇 / 多篇 / 观点演变的内容形态选择
