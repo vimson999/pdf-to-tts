@@ -8,24 +8,22 @@
 
 > 本工作区**不属于「兼听研报」**。兼听研报继续聚焦具体公司 / 具体标的；这里当前研究的是另一种内容形态。频道最终边界暂不预设，先通过真实 PDF 库、选题测试和发布数据逐步长出来。
 
-## 1. 两层结构
+## 1. 四类资产
 
-本工作区分为两层：
+本工作区目前分为四类资产：
 
 ```text
 methods/    根方法：跨视频复用的当前最佳实践
 episodes/   单集档案：每一期真实执行过程与结果
-```
-
-另外保留：
-
-```text
 batches/    上游输入批次：尚未归属具体单集的候选 PDF / JSON 清单
+cases/      决策案例：方法为什么会被质疑、修正并最终形成现在的版本
 ```
 
 核心原则：
 
-> **Methods 是“现在我们相信什么”；Episodes 是“我们为什么开始相信它”。**
+> **Methods 是“现在我们相信什么”；Episodes 是“某一集具体做了什么”；Cases 是“我们为什么最后开始相信它”。**
+
+`cases/` 不保存流水账，而只记录值得长期复用的认知演进、失败修正和方法升级过程。
 
 ## 2. 目录结构
 
@@ -35,6 +33,7 @@ batches/    上游输入批次：尚未归属具体单集的候选 PDF / JSON �
 ├── methods/
 │   ├── README.md
 │   ├── 10-reference-channel-research.md
+│   ├── 15-reference-script-structure.md
 │   ├── 20-topic-selection.md
 │   ├── 30-topic-scoring-model.md
 │   ├── 40-report-format-strategy.md
@@ -44,6 +43,9 @@ batches/    上游输入批次：尚未归属具体单集的候选 PDF / JSON �
 │   ├── 80-publishing-review.md
 │   ├── 90-knowledge-promotion.md
 │   └── 95-data-and-json-policy.md
+├── cases/
+│   ├── README.md
+│   └── 001-script-depth-and-naturalness-evolution.md
 ├── batches/
 │   └── README.md
 └── episodes/
@@ -102,6 +104,24 @@ Pattern      多集重复出现的模式
 Rule         足够稳定，升级为根方法
 ```
 
+### 3.4 重要的“为什么”进入 Cases
+
+当一个方法经历了明显的：
+
+```text
+初始假设
+→ 实际问题
+→ 用户反馈 / 外部样本 / 数据验证
+→ 版本修正
+→ 方法升级
+```
+
+并且这个过程未来很可能帮助避免重复犯错时，建立 `cases/` 记录。
+
+Case 的价值不是保存聊天原文，而是保存：
+
+> **可复用的决策路径、证据和版本差异。**
+
 ## 4. 与 pdf-to-tts 其他能力的关系
 
 这个工作区负责频道运营与单集项目管理；已有根目录 Prompt 仍负责具体生产能力：
@@ -119,7 +139,7 @@ SRT / 视觉导演 / Thumbnail
   ↓
 发布数据回流到 episode
   ↓
-必要时升级 methods
+必要时升级 methods / 沉淀 cases
 ```
 
 ## 5. 第一季测试
@@ -131,4 +151,5 @@ SRT / 视觉导演 / Thumbnail
 - 不为了填满栏目而做弱选题；
 - 每一期保留完整决策链；
 - 优先记录真实发布数据；
+- 对重要失败、认知修正和方法演进建立 Case；
 - 用第一季结果决定第二季是否需要收窄定位、调整题型和视觉包装。
