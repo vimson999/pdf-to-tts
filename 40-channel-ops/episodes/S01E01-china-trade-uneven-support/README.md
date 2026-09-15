@@ -2,7 +2,7 @@
 
 ```yaml
 episode_id: S01E01
-status: researching
+status: scripting
 working_topic: 中国出口这么强，为什么对就业和收入的拉动却没有同样强？
 core_question: 中国出口与贸易顺差表现强劲，但为什么对实际产出、就业、收入和国内吸收的传导并不均衡？
 format: single-report
@@ -14,7 +14,7 @@ publish_url:
 
 ## 当前判断
 
-这期已经从“元数据候选”升级到“正文验证后的强候选”。
+这期已经从“元数据候选”升级到“正文验证后的强候选”，并已形成第一版可直接 TTS 的完整文案。
 
 主报告本身已经形成完整叙事链：
 
@@ -47,9 +47,10 @@ README.md
 20-research-notes.md
 30-claim-evidence-map.md
 35-video-plan.md
+40-script.md
 50-title-options.md
 60-thumbnail.md
 inputs/source-manifest.json
 ```
 
-下一步：完成视频策划确认后，再进入 `40-script.md`。
+下一步：审读 `40-script.md`，重点检查开场张力、解释密度、是否存在过度推演；确认后再进入最终标题、封皮与 TTS / SRT 生产。
